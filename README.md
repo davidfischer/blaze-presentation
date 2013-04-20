@@ -1,7 +1,7 @@
 Blaze
 =====
 
-This is a presentation I gave at San Diego Python's
+This is a short talk I gave at San Diego Python's
 [data analysis workshop](http://www.meetup.com/pythonsd/events/94234812/)
 on April 20, 2013.
 
