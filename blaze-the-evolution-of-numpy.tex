@@ -1,0 +1,91 @@
+\documentclass{beamer}
+%\usetheme{Madrid} % My favorite!
+\usetheme{Boadilla} % Pretty neat, soft color.
+%\usetheme{default}
+%\usetheme{Warsaw}
+%\usetheme{Bergen} % This template has nagivation on the left
+%\usetheme{Frankfurt} % Similar to the default 
+%with an extra region at the top.
+%\usecolortheme{seahorse} % Simple and clean template
+%\usetheme{Darmstadt} % not so good
+% Uncomment the following line if you want %
+% page numbers and using Warsaw theme%
+% \setbeamertemplate{footline}[page number]
+%\setbeamercovered{transparent}
+\setbeamercovered{invisible}
+% To remove the navigation symbols from 
+% the bottom of slides%
+\setbeamertemplate{navigation symbols}{} 
+%
+\usepackage{graphicx}
+%\usepackage{bm}         % For typesetting bold math (not \mathbold)
+%\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
+%
+\title[Blaze]{Blaze: the future of numpy?}
+\author{David Fischer}
+
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{What is Blaze?}
+% One of the original numpy developers left for blaze
+\begin{itemize}
+\item http://blaze.pydata.org/
+\item extends but does not replace numpy
+\item backed by continuum.io
+\item \$3M in DARPA funding
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile] % Notice the [fragile] option %
+\frametitle{What do I need blaze for?}
+\begin{verbatim}
+
+# What about this?
+arange(15000000000).reshape(150, 100000000)
+
+\end{verbatim} 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Features}
+\begin{itemize}
+\item Operate on data on disk similarly to data in memory
+\item Custom shapes (not just N*M)
+\item Add metadata to arrays
+\end{itemize}
+\end{frame}
+ 
+ 
+\begin{frame}
+\frametitle{Is it ready?}
+\begin{itemize}
+\item Installation is a pain -- Anaconda helps
+\item "Pre-alpha" software
+\item Documentation is forthcoming
+\item Using blaze means committing to blaze development   % at least for now
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Features}
+\begin{itemize}
+\item Operate on data on disk similarly to data in memory
+\item Custom shapes
+\item Improved persistence formats   % compression, hashing
+\item Add metadata to arrays
+\end{itemize}
+\end{frame}
+
+
+% End of slides
+\end{document} 
