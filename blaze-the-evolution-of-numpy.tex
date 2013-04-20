@@ -21,7 +21,7 @@
 %\usepackage{bm}         % For typesetting bold math (not \mathbold)
 %\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
 %
-\title[Blaze]{Blaze: the future of numpy?}
+\title[San Diego Python]{Blaze: the future of numpy?}
 \author{David Fischer}
 
 
@@ -49,7 +49,7 @@
 \begin{verbatim}
 
 # What about this?
-arange(15000000000).reshape(150, 100000000)
+arange(15 * 10**9).reshape(150, 10**8)
 
 \end{verbatim} 
 \end{frame}
@@ -57,9 +57,14 @@ arange(15000000000).reshape(150, 100000000)
 
 \begin{frame}
 \frametitle{Features}
+% Data "shape"
+% heterogeneous data
+% Custom types
 \begin{itemize}
 \item Operate on data on disk similarly to data in memory
 \item Custom shapes (not just N*M)
+\item Custom types
+\item Improved persistence formats   % compression, hashing
 \item Add metadata to arrays
 \end{itemize}
 \end{frame}
@@ -72,17 +77,30 @@ arange(15000000000).reshape(150, 100000000)
 \item "Pre-alpha" software
 \item Documentation is forthcoming
 \item Using blaze means committing to blaze development   % at least for now
+\item 1.0 release targeted for 2014
 \end{itemize}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Features}
+\frametitle{Future features}
 \begin{itemize}
-\item Operate on data on disk similarly to data in memory
-\item Custom shapes
-\item Improved persistence formats   % compression, hashing
-\item Add metadata to arrays
+\item Database features like SQL \& indexes
+\item (improved) multi-core, multi-processor, distributed
+\item (easier) GPU integration
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Resources}
+\begin{itemize}
+\item http://blaze.pydata.org/
+\item http://continuum.io/blog/blaze
+\item https://github.com/ContinuumIO/blaze-core
+\item http://www.slideshare.net/teoliphant/blaze-a-largescale-arrayoriented-infrastructure-for-python
+\item https://speakerdeck.com/sdiehl/blaze-next-generation-numpy
+\item http://pythonsd.org
 \end{itemize}
 \end{frame}
 
